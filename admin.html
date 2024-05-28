@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesadmin.css">
+    <title>Contador de Botones</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Elección 2024</h1>
+        <label for="sectionSelect">Selecciona la comunidad para conocer los votos:</label>
+        <select id="sectionSelect">
+            <option value="section1">Municipio</option>
+            <option value="section2">1ra seccion</option>
+            <option value="section3">2da seccion</option>
+            <option value="section4">3ra seccion</option>
+            <option value="section5">Venustiano Carranza</option>
+            <option value="section6">San Pedro</option>
+            <option value="section7">Zacatzontetla</option>
+            <option value="section8">Velazco</option>
+            <option value="section9">Texmolac</option>
+            <option value="section10">Portillo</option>
+        </select>
+        <div class="chart-container">
+            <canvas id="votesChart"></canvas>
+        </div>
+        <div id="counters">
+            <p>VOTOS PARA PRI: <span id="count1">0</span></p>
+            <p>VOTOS PARA PAN: <span id="count2">0</span></p>
+            <p>VOTOS PARA PRD: <span id="count3">0</span></p>
+            <p>VOTOS PARA MORENA: <span id="count4">0</span></p>
+            <p>VOTOS PARA MOVIMIENTO CIUDADANO: <span id="count5">0</span></p>
+            <p>VOTOS PARA PT: <span id="count6">0</span></p>
+            <p>VOTOS PARA FUERZA MEXICO: <span id="count7">0</span></p>
+            <p>VOTOS PARA NUEVA ALIANZA: <span id="count8">0</span></p>
+            <p>Contador Botón 9: <span id="count9">0</span></p>
+        </div>
+    </div>
+    <script src="appadmin.js"></script>
+</body>
+</html>

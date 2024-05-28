@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+label, select {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.button-image {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    color: transparent;
+    text-align: center;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#button1 {
+    background-image: url('./Partidos/Pri.png');
+}
+
+#button2 {
+    background-image: url('./Partidos/Pan.png');
+}
+
+#button3 {
+    background-image: url('./Partidos/Prd.png');
+}
+
+#button4 {
+    background-image: url('./Partidos/Mrna.png');
+}
+
+#button5 {
+    background-image: url('./Partidos/MC.png');
+}
+
+#button6 {
+    background-image: url('./Partidos/PT.png');
+}
+
+#button7 {
+    background-image: url('./Partidos/FM.png');
+}
+
+#button8 {
+    background-image: url('./Partidos/NA.png');
+}
+
+/* #button9 {
+    background-image: url('./Partidos/tu-imagen9.jpg');
+} */
+
+.button-image:hover {
+    opacity: 0.8;
+}
+
+#counters {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .button-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    label, select {
+        font-size: 1em;
+    }
+}
