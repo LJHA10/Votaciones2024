@@ -81,9 +81,9 @@ button {
     background-image: url('./Partidos/NA.png');
 }
 
-/* #button9 {
-    background-image: url('./Partidos/tu-imagen9.jpg');
-} */
+#button9 {
+    background-image: url('./Partidos/nulo.png');
+}
 
 .button-image:hover {
     opacity: 0.8;

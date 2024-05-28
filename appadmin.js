@@ -31,15 +31,31 @@ const ctx = document.getElementById('votesChart').getContext('2d');
 const votesChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['PRI', 'PAN', 'PRD', 'MORENA', 'MOVIMIENTO CIUDADANO', 'PT', 'FUERZA MEXICO', 'NUEVA ALIANZA', 'Botón 9'],
+        labels: ['PRI', 'PAN', 'PRD', 'MORENA', 'MOVIMIENTO CIUDADANO', 'PT', 'FUERZA MEXICO', 'NUEVA ALIANZA', 'VOTOS NULOS'],
         datasets: [{
             label: 'Votos',
             data: [0, 0, 0, 0, 0, 0, 0, 0, 0],
             backgroundColor: [
-                '#FF5733', '#33FF57', '#3357FF', '#FF33A1', '#33FFF5', '#FF8C33', '#8C33FF', '#FF3388', '#33FFBB'
+                'rgba(0, 128, 0, 0.5)',   // PRI (verde)
+                'rgba(0, 0, 255, 0.5)',   // PAN (azul)
+                'rgba(255, 255, 0, 0.5)', // PRD (amarillo)
+                'rgba(128, 0, 0, 0.5)',   // MORENA (marrón)
+                'rgba(255, 165, 0, 0.5)', // MOVIMIENTO CIUDADANO (naranja)
+                'rgba(255, 0, 0, 0.5)',   // PT (rojo)
+                'rgba(255, 192, 203, 0.5)', // FUERZA MEXICO (rosa)
+                'rgba(0, 255, 255, 0.5)', // NUEVA ALIANZA (verde agua)
+                'rgba(128, 128, 128, 0.5)' // Botón 9 (gris)
             ],
             borderColor: [
-                '#C70039', '#00FF00', '#0000FF', '#FFC0CB', '#00FFFF', '#FFA500', '#800080', '#FF69B4', '#00FF7F'
+                'rgb(0, 128, 0)',   // PRI (verde)
+                'rgb(0, 0, 255)',   // PAN (azul)
+                'rgb(255, 255, 0)', // PRD (amarillo)
+                'rgb(128, 0, 0)',   // MORENA (marrón)
+                'rgb(255, 165, 0)', // MOVIMIENTO CIUDADANO (naranja)
+                'rgb(255, 0, 0)',   // PT (rojo)
+                'rgb(255, 192, 203)', // FUERZA MEXICO (rosa)
+                'rgb(0, 255, 255)', // NUEVA ALIANZA (verde agua)
+                'rgb(128, 128, 128)' // Botón 9 (gris)
             ],
             borderWidth: 1
         }]
